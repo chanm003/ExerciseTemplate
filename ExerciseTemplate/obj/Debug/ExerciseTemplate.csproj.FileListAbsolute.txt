@@ -1,0 +1,4 @@
+c:\users\administrator\documents\visual studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\bin\Debug\ExerciseTemplate.dll
+c:\users\administrator\documents\visual studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\bin\Debug\ExerciseTemplate.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\obj\Debug\ExerciseTemplate.dll
+c:\users\administrator\documents\visual studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\obj\Debug\ExerciseTemplate.pdb

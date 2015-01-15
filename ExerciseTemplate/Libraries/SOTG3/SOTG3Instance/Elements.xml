@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SOTG-35 Documents" OnQuickLaunch="FALSE" TemplateType="10094" Url="SOTG3" Description="Task Group 3 document library"></ListInstance>
+</Elements>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Exercise Announcements" OnQuickLaunch="FALSE" TemplateType="10004" Url="Lists/ExerciseAnnouncements" Description="Use this list to track upcoming events, status updates or other team news. "></ListInstance>
+</Elements>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SOCC Documents" OnQuickLaunch="FALSE" TemplateType="10091" Url="SOCC" Description="Component Command document library "></ListInstance>
+</Elements>

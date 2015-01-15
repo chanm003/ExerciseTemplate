@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SOATG Documents" OnQuickLaunch="FALSE" TemplateType="10090" Url="SOATG" Description=""></ListInstance>
+</Elements>

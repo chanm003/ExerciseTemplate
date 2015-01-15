@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List project item, an error will occur when the project is run. -->
+    <ListTemplate
+        Name="RFI"
+        Type="10015"
+        BaseType="0"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        Sequence="410"
+        DisplayName="RFI"
+        Description="My List Definition"
+        Image="/_layouts/images/itgen.png"/>
+  
+  <!--
+    <CustomAction
+    Sequence="239"
+    Location="ScriptLink"
+    ScriptBlock="ExecuteOrDelayUntilScriptLoaded(function(){
+          window.openRfiResponseModal = function(itemId, listUrl){
+              var modalUrl = listUrl + '/Respond.aspx?ID=' + itemId;
+               SP.UI.ModalDialog.showModalDialog({
+                    url: modalUrl,
+                    title: 'Respond to RFI'
+               });
+          }
+      }, 'sp.js');"
+      />
+    <CustomAction
+      Sequence="240"
+      Location="EditControlBlock"
+      RegistrationType="List"
+      RegistrationId="10015"
+      Title="Respond to this RFI"
+      Rights="ApproveItems">
+      <UrlAction Url="javascript:openRfiResponseModal('{ItemId}','{ListUrlDir}');"/>
+    </CustomAction>
+    -->
+
+</Elements>
