@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Exercise Calendar" OnQuickLaunch="FALSE" TemplateType="10005" Url="Lists/ExerciseCalendar" Description="Use the Calendar list to keep informed of upcoming meetings, deadlines, and other important events. "></ListInstance>
+  <ListInstance Title="Exercise Calendar" OnQuickLaunch="FALSE" TemplateType="106" Url="Lists/ExerciseCalendar" Description=""></ListInstance>
 </Elements>

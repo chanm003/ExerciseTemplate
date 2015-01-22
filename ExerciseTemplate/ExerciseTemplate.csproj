@@ -13,6 +13,7 @@
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -78,7 +79,7 @@
       <FeatureId>{3a42254d-5bb0-4647-89bf-a911ec4de760}</FeatureId>
     </None>
     <None Include="key.snk" />
-    <None Include="Libraries\App\SharePointProjectItem.spdata">
+    <None Include="Libraries\app\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{01319a03-00dd-4f92-aedc-1fd15cd4af4f}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\EXCON\EXCONInstance\SharePointProjectItem.spdata">
@@ -172,10 +173,10 @@
       <SharePointProjectItemId>{964632fe-17bc-49e2-83df-43db7749e751}</SharePointProjectItemId>
     </None>
     <None Include="Lists\ExerciseCalendar\ExerciseCalendarInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{50212ded-c8ed-4762-96a9-cfbe5e486ad0}</SharePointProjectItemId>
+      <SharePointProjectItemId>{8684eb42-1e33-4642-8cd2-87aa89b44b81}</SharePointProjectItemId>
     </None>
     <None Include="Lists\ExerciseCalendar\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6dcaa290-68bd-4a4e-bb12-61eac080bda6}</SharePointProjectItemId>
+      <SharePointProjectItemId>{3e84d76e-5131-4a46-9406-b6fa5477765f}</SharePointProjectItemId>
     </None>
     <None Include="Lists\HelpDesk\HelpDeskInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ce72a9bb-9a66-451d-a90b-6581de51b511}</SharePointProjectItemId>
@@ -306,7 +307,7 @@
     <Content Include="Features\Schema\Schema.Template.xml">
       <DependentUpon>Schema.feature</DependentUpon>
     </Content>
-    <Content Include="Libraries\App\Elements.xml" />
+    <Content Include="Libraries\app\Elements.xml" />
     <Content Include="Libraries\EXCON\EditDlg.htm" />
     <Content Include="Libraries\EXCON\Elements.xml" />
     <Content Include="Libraries\EXCON\EXCONInstance\Elements.xml" />

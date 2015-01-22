@@ -3,13 +3,13 @@
     <!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List project item, an error will occur when the project is run. -->
     <ListTemplate
         Name="ExerciseCalendar"
-        Type="10005"
+        Type="106"
         BaseType="0"
         OnQuickLaunch="TRUE"
         FolderCreation="FALSE"
         SecurityBits="11"
         Sequence="340"
-        DisplayName="Exercise Calendar"
+        DisplayName="ExerciseCalendar"
         Description="My List Definition"
-        Image="/_layouts/images/itevent.png"/>
+        Image="/_layouts/15/images/itevent.png"/>
 </Elements>

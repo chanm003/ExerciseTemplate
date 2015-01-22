@@ -1,10 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="Exercise Calendar" Direction="$Resources:Direction;" Url="Lists/ExerciseCalendar" EnableContentTypes="TRUE" MultipleTypes="TRUE" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="ExerciseCalendar" Direction="$Resources:Direction;" Url="Lists/ExerciseCalendar" EnableContentTypes="TRUE" MultipleTypes="TRUE" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentTypeRef ID="0x0102">
-        <Folder TargetName="Event" />
-      </ContentTypeRef>
+      <ContentType ID="0x0100ab344d54245c4220a963c443213592b3" Name="Event">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{288f5f32-8462-4175-8f09-dd7ba29359a9}" Name="Location" />
+          <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" />
+          <FieldRef ID="{2684f9f2-54be-429f-ba06-76754fc056bf}" Name="EndDate" />
+          <FieldRef ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Name="Description" />
+          <FieldRef ID="{7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8}" Name="fAllDayEvent" />
+          <FieldRef ID="{f2e63656-135e-4f1c-8fc2-ccbe74071901}" Name="fRecurrence" />
+          <FieldRef ID="{08fc65f9-48eb-4e99-bd61-5946c439e691}" Name="WorkspaceLink" />
+          <FieldRef ID="{5d1d4e76-091a-4e03-ae83-6a59847731c0}" Name="EventType" />
+          <FieldRef ID="{63055d04-01b5-48f3-9e1e-e564e7c6b23b}" Name="UID" />
+          <FieldRef ID="{dfcc8fff-7c4c-45d6-94ed-14ce0719efef}" Name="RecurrenceID" />
+          <FieldRef ID="{b8bbe503-bb22-4237-8d9e-0587756a2176}" Name="EventCanceled" />
+          <FieldRef ID="{4d54445d-1c84-4a6d-b8db-a51ded4e1acc}" Name="Duration" />
+          <FieldRef ID="{d12572d0-0a1e-4438-89b5-4d0430be7603}" Name="RecurrenceData" />
+          <FieldRef ID="{6cc1c612-748a-48d8-88f2-944f477f301b}" Name="TimeZone" />
+          <FieldRef ID="{c4b72ed6-45aa-4422-bff1-2b6750d30819}" Name="XMLTZone" />
+          <FieldRef ID="{9b2bed84-7769-40e3-9b1d-7954a4053834}" Name="MasterSeriesItemID" />
+          <FieldRef ID="{881eac4a-55a5-48b6-a28e-8329d7486120}" Name="Workspace" />
+          <FieldRef ID="{8137f7ad-9170-4c1d-a17b-4ca7f557bc88}" Name="ParticipantsPicker" />
+          <FieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87d}" Name="Category" />
+          <FieldRef ID="{a4e7b3e1-1b0a-4ffa-8426-c94d4cb8cc57}" Name="Facilities" />
+          <FieldRef ID="{393003f9-6ccb-4ea9-9623-704aa4748dec}" Name="FreeBusy" />
+          <FieldRef ID="{d8cd5bcf-3768-4d6c-a8aa-fefa3c793d8d}" Name="Overbook" />
+          <FieldRef ID="{453c2d71-c41e-46bc-97c1-a5a9535053a3}" Name="Participants" />
+        </FieldRefs>
+      </ContentType>
     </ContentTypes>
     <Fields>
       <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
@@ -48,7 +73,7 @@
           <FieldRef Name="Workspace" RefType="LinkURL" />
         </FieldRefs>
       </Field>
-      <Field ID="{08fc65f9-48eb-4e99-bd61-5946c439e691}" Type="CrossProjectLink" Name="WorkspaceLink" Format="EventList" DisplayName="$Resources:core,Workspace;" DisplayImage="mtgicon.gif" HeaderImage="mtgicnhd.gif" ClassInfo="Icon" Title="$Resources:core,Meeting_Workspace;" Filterable="TRUE" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkspaceLink">
+      <Field ID="{08fc65f9-48eb-4e99-bd61-5946c439e691}" Type="CrossProjectLink" Name="WorkspaceLink" Format="EventList" DisplayName="$Resources:core,Workspace;" DisplayImage="mtgicon.gif" HeaderImage="mtgicnhd.gif" ClassInfo="Icon" Title="$Resources:core,Meeting_Workspace;" Filterable="TRUE" Sealed="TRUE" Hidden="TRUE" ShowInViewForm="FALSE" ShowInEditForm="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkspaceLink">
         <FieldRefs>
           <FieldRef Name="Workspace" RefType="LinkURL" CreateURL="newMWS.aspx">$Resources:core,Calendar_MeetingWorkspaceField_Desc;</FieldRef>
           <FieldRef Name="RecurrenceID" RefType="RecurrenceId" DisplayName="$Resources:core,Instance_ID;" />
@@ -67,7 +92,7 @@
       <Field ID="{9b2bed84-7769-40e3-9b1d-7954a4053834}" Type="Integer" Name="MasterSeriesItemID" DisplayName="$Resources:core,MasterSeriesItemID;" Sealed="TRUE" Hidden="TRUE" Indexed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="MasterSeriesItemID"></Field>
       <Field ID="{881eac4a-55a5-48b6-a28e-8329d7486120}" Type="URL" Name="Workspace" DisplayName="$Resources:core,WorkspaceUrl;" Hidden="TRUE" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Workspace"></Field>
       <Field ID="{8137f7ad-9170-4c1d-a17b-4ca7f557bc88}" Name="ParticipantsPicker" DisplayName="$Resources:core,ParticipantsPicker;" Type="UserMulti" List="UserInfo" Mult="TRUE" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" Sortable="FALSE" Sealed="FALSE" AllowDeletion="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ParticipantsPicker"></Field>
-      <Field ID="{6df9bd52-550e-4a30-bc31-a4366832a87d}" Name="Category" Description="Select the categories related to this calendar event" DisplayName="$Resources:core,GBW_SR_Category_Field;" Type="Choice" Format="Dropdown" FillInChoice="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Category" Required="TRUE">
+      <Field ID="{6df9bd52-550e-4a30-bc31-a4366832a87d}" Name="Category" DisplayName="$Resources:core,GBW_SR_Category_Field;" Type="Choice" Format="Dropdown" FillInChoice="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Category">
         <CHOICES>
           <CHOICE>EXCON</CHOICE>
           <CHOICE>SOCC-Operations</CHOICE>
@@ -87,40 +112,10 @@
       <Field ID="{393003f9-6ccb-4ea9-9623-704aa4748dec}" Name="FreeBusy" DisplayName="$Resources:core,GBW_SR_FreeBusyCalendar_Field;" Type="FreeBusy" Sortable="FALSE" CanToggleHidden="TRUE" ShowInDisplayForm="FALSE" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FreeBusy"></Field>
       <Field ID="{d8cd5bcf-3768-4d6c-a8aa-fefa3c793d8d}" Name="Overbook" DisplayName="$Resources:core,GBW_SR_Overbook_Field;" Type="Overbook" Sortable="FALSE" CanToggleHidden="TRUE" ShowInDisplayForm="FALSE" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Overbook"></Field>
       <Field ID="{453c2d71-c41e-46bc-97c1-a5a9535053a3}" Name="Participants" DisplayName="HiddenParticipants" Type="Note" Sortable="FALSE" Sealed="TRUE" StaticName="Participants" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3"></Field>
-      <Field Type="Calculated" DisplayName="Time" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{81de9d9a-40b0-4b0d-ae4b-c016b9bc71cb}" Name="Time">
-        <Formula>=UPPER(TEXT(EventDate,"HHmm")&amp;"Z")</Formula>
-        <FieldRefs>
-          <FieldRef Name="EventDate" />
-        </FieldRefs>
-      </Field>
-      <Field Type="Calculated" DisplayName="Date String" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{128a429f-44c5-494a-86f3-e1e8a8e5638f}" Name="DateString">
-        <Formula>=TEXT(EventDate,"yyyyMMdd")</Formula>
-        <FieldRefs>
-          <FieldRef Name="EventDate" />
-        </FieldRefs>
-      </Field>
-      <Field Type="Calculated" DisplayName="StartTimeNbr" Format="DateOnly" LCID="1033" ResultType="Number" ReadOnly="TRUE" ID="{4d024fa9-4ca0-48de-a33c-aabbbe90e83c}" Name="StartTimeNbr">
-        <Formula>=EventDate</Formula>
-        <FieldRefs>
-          <FieldRef Name="EventDate" />
-        </FieldRefs>
-      </Field>
-      <Field Type="Calculated" DisplayName="EndTimeNbr" Format="DateOnly" LCID="1033" ResultType="Number" ReadOnly="TRUE" ID="{1cb86ea0-56b5-4cb3-a719-050cbfd70a6d}" Name="EndTimeNbr">
-        <Formula>=EndDate</Formula>
-        <FieldRefs>
-          <FieldRef Name="EndDate" />
-        </FieldRefs>
-      </Field>
-      <Field Type="Calculated" DisplayName="StartMinus1Day" Format="DateTime" LCID="1033" ResultType="DateTime" ReadOnly="TRUE" ID="{47e43af4-1ab4-419d-92ed-484db8138fca}" Name="StartMinus1Day">
-        <Formula>=EventDate-1</Formula>
-        <FieldRefs>
-          <FieldRef Name="EventDate" />
-        </FieldRefs>
-      </Field>
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" RecurrenceRowset="TRUE" TabularView="FALSE" MobileView="TRUE">
-        <Toolbar Type="Standard"  ShowAlways="TRUE" />
+        <Toolbar Type="Standard" />
         <XslLink>main.xsl</XslLink>
         <Query>
           <Where>
@@ -144,7 +139,6 @@
           <FieldRef Name="EventDate" Explicit="TRUE"></FieldRef>
           <FieldRef Name="LinkTitleNoMenu" Explicit="TRUE"></FieldRef>
           <FieldRef Name="Description" Explicit="TRUE"></FieldRef>
-          <FieldRef Name="Attachments" Explicit="TRUE"></FieldRef>
           <FieldRef Name="fRecurrence" Explicit="TRUE"></FieldRef>
         </ViewFields>
         <RowLimit>10</RowLimit>
@@ -154,9 +148,10 @@
           </OrderBy>
         </Query>
       </View>
-      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_alleventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/events.png" Url="AllItems.aspx" DefaultBaseView="TRUE">
-        <Toolbar Type="Standard"  ShowAlways="TRUE" />
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_alleventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="AllItems.aspx" DefaultBaseView="TRUE">
+        <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
@@ -164,7 +159,6 @@
         </ParameterBindings>
         <ViewFields>
           <FieldRef Name="fRecurrence" />
-          <FieldRef Name="Attachments"></FieldRef>
           <FieldRef Name="WorkspaceLink" />
           <FieldRef Name="LinkTitle"></FieldRef>
           <FieldRef Name="Location"></FieldRef>
@@ -174,12 +168,12 @@
         </ViewFields>
         <Query>
           <OrderBy>
-            <FieldRef Name="EventDate" Ascending="FALSE"/>
+            <FieldRef Name="EventDate"></FieldRef>
           </OrderBy>
         </Query>
       </View>
-      <View BaseViewID="2" Type="CALENDAR" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_calendarview;" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Url="calendar.aspx" RecurrenceRowset="TRUE" DefaultView="TRUE" MobileUrl="_layouts/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard"  ShowAlways="TRUE" />
+      <View BaseViewID="2" Type="CALENDAR" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_calendarview;" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="calendar.aspx" RecurrenceRowset="TRUE" DefaultView="TRUE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -189,7 +183,6 @@
           <FieldRef Name="EndDate"></FieldRef>
           <FieldRef Name="fRecurrence" />
           <FieldRef Name="EventType" />
-          <FieldRef Name="Attachments"></FieldRef>
           <FieldRef Name="WorkspaceLink" />
           <FieldRef Name="Title"></FieldRef>
           <FieldRef Name="Location"></FieldRef>
@@ -218,16 +211,16 @@
           </Where>
         </Query>
       </View>
-      <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_curreventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/events.png" Url="MyItems.aspx" ReqAuth="TRUE" RecurrenceRowset="TRUE">
-        <Toolbar Type="Standard"  ShowAlways="TRUE" />
+      <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_curreventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="MyItems.aspx" ReqAuth="TRUE" RecurrenceRowset="TRUE">
+        <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
         </ParameterBindings>
         <ViewFields>
           <FieldRef Name="fRecurrence"></FieldRef>
-          <FieldRef Name="Attachments"></FieldRef>
           <FieldRef Name="WorkspaceLink" />
           <FieldRef Name="LinkTitle"></FieldRef>
           <FieldRef Name="Location"></FieldRef>
@@ -250,18 +243,54 @@
             <FieldRef Name="EventDate"></FieldRef>
           </OrderBy>
         </Query>
-        <RowLimit Paged="TRUE">100</RowLimit>
       </View>
-      <View DisplayName="Academics" BaseViewID="4" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="Academics.aspx" SetupPath="pages\viewpage.aspx">
+      <View 
+        BaseViewID="4" 
+        Type="CALENDAR" 
+        WebPartZoneID="Main" 
+        DisplayName="Academics" 
+        MobileView="TRUE"  
+        SetupPath="pages\viewpage.aspx" 
+        ImageUrl="/_layouts/15/images/events.png?rev=23" 
+        TabularView="FALSE" 
+        Url="academics.aspx" 
+        RecurrenceRowset="TRUE" 
+        DefaultView="FALSE" 
+        MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
         <Query>
           <Where>
             <And>
               <DateRangesOverlap>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="RecurrenceID" />
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
                 <Value Type="DateTime">
-                  <Month />
+                  <Month></Month>
                 </Value>
               </DateRangesOverlap>
               <Eq>
@@ -271,357 +300,89 @@
             </And>
           </Where>
         </Query>
+      </View>
+      <View BaseViewID="5" Type="CALENDAR" WebPartZoneID="Main" DisplayName="Battle Rhythm" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="BattleRhythm.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
         <ViewFields>
-          <FieldRef Name="EventDate" />
-          <FieldRef Name="EndDate" />
-          <FieldRef Name="Title" />
-          <FieldRef Name="fRecurrence" Explicit="TRUE" />
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
         </ViewFields>
         <ViewData>
-          <FieldRef Name="Title" Type="CalendarMonthTitle" />
-          <FieldRef Name="Title" Type="CalendarWeekTitle" />
-          <FieldRef Name="Location" Type="CalendarWeekLocation" />
-          <FieldRef Name="Title" Type="CalendarDayTitle" />
-          <FieldRef Name="Location" Type="CalendarDayLocation" />
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
         </ViewData>
-        <CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='TRUE' /&gt;</CalendarViewStyles>
-        <RowLimit>0</RowLimit>
-        <Aggregations Value="Off" />
-      </View>
-      <View DisplayName="Battle Rhythm" BaseViewID="5" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="BattleRhythm.aspx" SetupPath="pages\viewpage.aspx">
-				<Query>
-					<Where>
-						<And>
-							<DateRangesOverlap>
-								<FieldRef Name="EventDate" />
-								<FieldRef Name="EndDate" />
-								<FieldRef Name="RecurrenceID" />
-								<Value Type="DateTime">
-									<Month />
-								</Value>
-							</DateRangesOverlap>
-							<Eq>
-								<FieldRef Name="Category" />
-								<Value Type="Text">Battle Rhythm</Value>
-							</Eq>
-						</And>
-					</Where>
-				</Query>
-				<ViewFields>
-					<FieldRef Name="EventDate" />
-					<FieldRef Name="EndDate" />
-					<FieldRef Name="Title" />
-					<FieldRef Name="fRecurrence" Explicit="TRUE" />
-				</ViewFields>
-				<ViewData>
-					<FieldRef Name="Title" Type="CalendarMonthTitle" />
-					<FieldRef Name="Title" Type="CalendarWeekTitle" />
-					<FieldRef Name="Location" Type="CalendarWeekLocation" />
-					<FieldRef Name="Title" Type="CalendarDayTitle" />
-					<FieldRef Name="Location" Type="CalendarDayLocation" />
-				</ViewData>
-				<CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-				<RowLimit>0</RowLimit>
-				<Aggregations Value="Off" />
-			</View>
-			<View DisplayName="SOCC-Operations" BaseViewID="6" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="SOCCOperations.aspx" SetupPath="pages\viewpage.aspx">
-				<Query>
-					<Where>
-						<And>
-							<DateRangesOverlap>
-								<FieldRef Name="EventDate" />
-								<FieldRef Name="EndDate" />
-								<FieldRef Name="RecurrenceID" />
-								<Value Type="DateTime">
-									<Month />
-								</Value>
-							</DateRangesOverlap>
-							<Eq>
-								<FieldRef Name="Category" />
-								<Value Type="Text">SOCC-Operations</Value>
-							</Eq>
-						</And>
-					</Where>
-				</Query>
-				<ViewFields>
-					<FieldRef Name="EventDate" />
-					<FieldRef Name="EndDate" />
-					<FieldRef Name="Title" />
-					<FieldRef Name="fRecurrence" Explicit="TRUE" />
-				</ViewFields>
-				<ViewData>
-					<FieldRef Name="Title" Type="CalendarMonthTitle" />
-					<FieldRef Name="Title" Type="CalendarWeekTitle" />
-					<FieldRef Name="Location" Type="CalendarWeekLocation" />
-					<FieldRef Name="Title" Type="CalendarDayTitle" />
-					<FieldRef Name="Location" Type="CalendarDayLocation" />
-				</ViewData>
-				<CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-				<RowLimit>0</RowLimit>
-				<Aggregations Value="Off" />
-			</View>
-			<View DisplayName="SOCC-Intel" BaseViewID="7" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="SOCCIntel.aspx" SetupPath="pages\viewpage.aspx">
-				<Query>
-					<Where>
-						<And>
-							<DateRangesOverlap>
-								<FieldRef Name="EventDate" />
-								<FieldRef Name="EndDate" />
-								<FieldRef Name="RecurrenceID" />
-								<Value Type="DateTime">
-									<Month />
-								</Value>
-							</DateRangesOverlap>
-							<Eq>
-								<FieldRef Name="Category" />
-								<Value Type="Text">SOCC-Intel</Value>
-							</Eq>
-						</And>
-					</Where>
-				</Query>
-				<ViewFields>
-					<FieldRef Name="EventDate" />
-					<FieldRef Name="EndDate" />
-					<FieldRef Name="Title" />
-					<FieldRef Name="fRecurrence" Explicit="TRUE" />
-				</ViewFields>
-				<ViewData>
-					<FieldRef Name="Title" Type="CalendarMonthTitle" />
-					<FieldRef Name="Title" Type="CalendarWeekTitle" />
-					<FieldRef Name="Location" Type="CalendarWeekLocation" />
-					<FieldRef Name="Title" Type="CalendarDayTitle" />
-					<FieldRef Name="Location" Type="CalendarDayLocation" />
-				</ViewData>
-				<CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-				<RowLimit>0</RowLimit>
-				<Aggregations Value="Off" />
-			</View>
-			<View DisplayName="SOCC-SIGCEN" BaseViewID="8" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="SOCCSIGCEN.aspx" SetupPath="pages\viewpage.aspx">
-				<Query>
-					<Where>
-						<And>
-							<DateRangesOverlap>
-								<FieldRef Name="EventDate" />
-								<FieldRef Name="EndDate" />
-								<FieldRef Name="RecurrenceID" />
-								<Value Type="DateTime">
-									<Month />
-								</Value>
-							</DateRangesOverlap>
-							<Eq>
-								<FieldRef Name="Category" />
-								<Value Type="Text">SOCC-SIGCEN</Value>
-							</Eq>
-						</And>
-					</Where>
-				</Query>
-				<ViewFields>
-					<FieldRef Name="EventDate" />
-					<FieldRef Name="EndDate" />
-					<FieldRef Name="Title" />
-					<FieldRef Name="fRecurrence" Explicit="TRUE" />
-				</ViewFields>
-				<ViewData>
-					<FieldRef Name="Title" Type="CalendarMonthTitle" />
-					<FieldRef Name="Title" Type="CalendarWeekTitle" />
-					<FieldRef Name="Location" Type="CalendarWeekLocation" />
-					<FieldRef Name="Title" Type="CalendarDayTitle" />
-					<FieldRef Name="Location" Type="CalendarDayLocation" />
-				</ViewData>
-				<CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-				<RowLimit>0</RowLimit>
-				<Aggregations Value="Off" />
-			</View>
-      <View DisplayName="SOCC-SUPCEN" BaseViewID="9" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="SOCCSUPCEN.aspx" SetupPath="pages\viewpage.aspx">
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
         <Query>
           <Where>
             <And>
               <DateRangesOverlap>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="RecurrenceID" />
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
                 <Value Type="DateTime">
-                  <Month />
+                  <Month></Month>
                 </Value>
               </DateRangesOverlap>
               <Eq>
                 <FieldRef Name="Category" />
-                <Value Type="Text">SOCC-SUPCEN</Value>
+                <Value Type="Text">Battle Rhythm</Value>
               </Eq>
             </And>
           </Where>
         </Query>
+      </View>
+      <View BaseViewID="6" Type="CALENDAR" WebPartZoneID="Main" DisplayName="EXCON" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="excon.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
         <ViewFields>
-          <FieldRef Name="EventDate" />
-          <FieldRef Name="EndDate" />
-          <FieldRef Name="Title" />
-          <FieldRef Name="fRecurrence" Explicit="TRUE" />
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
         </ViewFields>
         <ViewData>
-          <FieldRef Name="Title" Type="CalendarMonthTitle" />
-          <FieldRef Name="Title" Type="CalendarWeekTitle" />
-          <FieldRef Name="Location" Type="CalendarWeekLocation" />
-          <FieldRef Name="Title" Type="CalendarDayTitle" />
-          <FieldRef Name="Location" Type="CalendarDayLocation" />
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
         </ViewData>
-        <CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-        <RowLimit>0</RowLimit>
-        <Aggregations Value="Off" />
-      </View>
-      <View DisplayName="SOTG-15" BaseViewID="10" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="SOTG-15.aspx" SetupPath="pages\viewpage.aspx">
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
         <Query>
           <Where>
             <And>
               <DateRangesOverlap>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="RecurrenceID" />
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
                 <Value Type="DateTime">
-                  <Month />
-                </Value>
-              </DateRangesOverlap>
-              <Eq>
-                <FieldRef Name="Category" />
-                <Value Type="Text">SOTG1</Value>
-              </Eq>
-            </And>
-          </Where>
-        </Query>
-        <ViewFields>
-          <FieldRef Name="EventDate" />
-          <FieldRef Name="EndDate" />
-          <FieldRef Name="Title" />
-          <FieldRef Name="fRecurrence" Explicit="TRUE" />
-        </ViewFields>
-        <ViewData>
-          <FieldRef Name="Title" Type="CalendarMonthTitle" />
-          <FieldRef Name="Title" Type="CalendarWeekTitle" />
-          <FieldRef Name="Location" Type="CalendarWeekLocation" />
-          <FieldRef Name="Title" Type="CalendarDayTitle" />
-          <FieldRef Name="Location" Type="CalendarDayLocation" />
-        </ViewData>
-        <CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-        <RowLimit>0</RowLimit>
-        <Aggregations Value="Off" />
-      </View>
-      <View DisplayName="SOTG-25" BaseViewID="11" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="SOTG-25.aspx" SetupPath="pages\viewpage.aspx">
-        <Query>
-          <Where>
-            <And>
-              <DateRangesOverlap>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="RecurrenceID" />
-                <Value Type="DateTime">
-                  <Month />
-                </Value>
-              </DateRangesOverlap>
-              <Eq>
-                <FieldRef Name="Category" />
-                <Value Type="Text">SOTG2</Value>
-              </Eq>
-            </And>
-          </Where>
-        </Query>
-        <ViewFields>
-          <FieldRef Name="EventDate" />
-          <FieldRef Name="EndDate" />
-          <FieldRef Name="Title" />
-          <FieldRef Name="fRecurrence" Explicit="TRUE" />
-        </ViewFields>
-        <ViewData>
-          <FieldRef Name="Title" Type="CalendarMonthTitle" />
-          <FieldRef Name="Title" Type="CalendarWeekTitle" />
-          <FieldRef Name="Location" Type="CalendarWeekLocation" />
-          <FieldRef Name="Title" Type="CalendarDayTitle" />
-          <FieldRef Name="Location" Type="CalendarDayLocation" />
-        </ViewData>
-        <CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-        <RowLimit>0</RowLimit>
-        <Aggregations Value="Off" />
-      </View>
-      <View DisplayName="SOTG-35" BaseViewID="12" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="SOTG-35.aspx" SetupPath="pages\viewpage.aspx">
-        <Query>
-          <Where>
-            <And>
-              <DateRangesOverlap>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="RecurrenceID" />
-                <Value Type="DateTime">
-                  <Month />
-                </Value>
-              </DateRangesOverlap>
-              <Eq>
-                <FieldRef Name="Category" />
-                <Value Type="Text">SOTG3</Value>
-              </Eq>
-            </And>
-          </Where>
-        </Query>
-        <ViewFields>
-          <FieldRef Name="EventDate" />
-          <FieldRef Name="EndDate" />
-          <FieldRef Name="Title" />
-          <FieldRef Name="fRecurrence" Explicit="TRUE" />
-        </ViewFields>
-        <ViewData>
-          <FieldRef Name="Title" Type="CalendarMonthTitle" />
-          <FieldRef Name="Title" Type="CalendarWeekTitle" />
-          <FieldRef Name="Location" Type="CalendarWeekLocation" />
-          <FieldRef Name="Title" Type="CalendarDayTitle" />
-          <FieldRef Name="Location" Type="CalendarDayLocation" />
-        </ViewData>
-        <CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-        <RowLimit>0</RowLimit>
-        <Aggregations Value="Off" />
-      </View>
-      <View DisplayName="SOATG" BaseViewID="13" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="SOATG.aspx" SetupPath="pages\viewpage.aspx">
-        <Query>
-          <Where>
-            <And>
-              <DateRangesOverlap>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="RecurrenceID" />
-                <Value Type="DateTime">
-                  <Month />
-                </Value>
-              </DateRangesOverlap>
-              <Eq>
-                <FieldRef Name="Category" />
-                <Value Type="Text">SOATG</Value>
-              </Eq>
-            </And>
-          </Where>
-        </Query>
-        <ViewFields>
-          <FieldRef Name="EventDate" />
-          <FieldRef Name="EndDate" />
-          <FieldRef Name="Title" />
-          <FieldRef Name="fRecurrence" Explicit="TRUE" />
-        </ViewFields>
-        <ViewData>
-          <FieldRef Name="Title" Type="CalendarMonthTitle" />
-          <FieldRef Name="Title" Type="CalendarWeekTitle" />
-          <FieldRef Name="Location" Type="CalendarWeekLocation" />
-          <FieldRef Name="Title" Type="CalendarDayTitle" />
-          <FieldRef Name="Location" Type="CalendarDayLocation" />
-        </ViewData>
-        <CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-        <RowLimit>0</RowLimit>
-        <Aggregations Value="Off" />
-      </View>
-      <View DisplayName="EXCON" BaseViewID="14" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="EXCON.aspx" SetupPath="pages\viewpage.aspx">
-        <Query>
-          <Where>
-            <And>
-              <DateRangesOverlap>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="RecurrenceID" />
-                <Value Type="DateTime">
-                  <Month />
+                  <Month></Month>
                 </Value>
               </DateRangesOverlap>
               <Eq>
@@ -631,33 +392,411 @@
             </And>
           </Where>
         </Query>
+      </View>
+      <View BaseViewID="7" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOCC-Intel" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOCCIntel.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
         <ViewFields>
-          <FieldRef Name="EventDate" />
-          <FieldRef Name="EndDate" />
-          <FieldRef Name="Title" />
-          <FieldRef Name="fRecurrence" Explicit="TRUE" />
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
         </ViewFields>
         <ViewData>
-          <FieldRef Name="Title" Type="CalendarMonthTitle" />
-          <FieldRef Name="Title" Type="CalendarWeekTitle" />
-          <FieldRef Name="Location" Type="CalendarWeekLocation" />
-          <FieldRef Name="Title" Type="CalendarDayTitle" />
-          <FieldRef Name="Location" Type="CalendarDayLocation" />
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
         </ViewData>
-        <CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-        <RowLimit>0</RowLimit>
-        <Aggregations Value="Off" />
-      </View>
-      <View DisplayName="VTC" BaseViewID="15" Type="CALENDAR" MobileView="TRUE" RecurrenceRowset="TRUE" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Scope="Recursive" WebPartZoneID="Main" WebPartOrder="1" Url="VTC.aspx" SetupPath="pages\viewpage.aspx">
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
         <Query>
           <Where>
             <And>
               <DateRangesOverlap>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="RecurrenceID" />
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
                 <Value Type="DateTime">
-                  <Month />
+                  <Month></Month>
+                </Value>
+              </DateRangesOverlap>
+              <Eq>
+                <FieldRef Name="Category" />
+                <Value Type="Text">SOCC-Intel</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="8" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOCC-Operations" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOCCOperations.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
+        <Query>
+          <Where>
+            <And>
+              <DateRangesOverlap>
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
+                <Value Type="DateTime">
+                  <Month></Month>
+                </Value>
+              </DateRangesOverlap>
+              <Eq>
+                <FieldRef Name="Category" />
+                <Value Type="Text">SOCC-Operations</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="9" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOCC-SIGCEN" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOCCSIGCEN.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
+        <Query>
+          <Where>
+            <And>
+              <DateRangesOverlap>
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
+                <Value Type="DateTime">
+                  <Month></Month>
+                </Value>
+              </DateRangesOverlap>
+              <Eq>
+                <FieldRef Name="Category" />
+                <Value Type="Text">SOCC-SIGCEN</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="10" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOCC-SUPCEN" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOCCSUPCEN.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
+        <Query>
+          <Where>
+            <And>
+              <DateRangesOverlap>
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
+                <Value Type="DateTime">
+                  <Month></Month>
+                </Value>
+              </DateRangesOverlap>
+              <Eq>
+                <FieldRef Name="Category" />
+                <Value Type="Text">SOCC-SUPCEN</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="11" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOATG" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOATG.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
+        <Query>
+          <Where>
+            <And>
+              <DateRangesOverlap>
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
+                <Value Type="DateTime">
+                  <Month></Month>
+                </Value>
+              </DateRangesOverlap>
+              <Eq>
+                <FieldRef Name="Category" />
+                <Value Type="Text">SOATG</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="12" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOTG-15" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOTG-15.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
+        <Query>
+          <Where>
+            <And>
+              <DateRangesOverlap>
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
+                <Value Type="DateTime">
+                  <Month></Month>
+                </Value>
+              </DateRangesOverlap>
+              <Eq>
+                <FieldRef Name="Category" />
+                <Value Type="Text">SOTG-15</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="13" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOTG-25" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOTG-25.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
+        <Query>
+          <Where>
+            <And>
+              <DateRangesOverlap>
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
+                <Value Type="DateTime">
+                  <Month></Month>
+                </Value>
+              </DateRangesOverlap>
+              <Eq>
+                <FieldRef Name="Category" />
+                <Value Type="Text">SOTG-25</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="14" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOTG-35" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOTG-35.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
+        <Query>
+          <Where>
+            <And>
+              <DateRangesOverlap>
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
+                <Value Type="DateTime">
+                  <Month></Month>
+                </Value>
+              </DateRangesOverlap>
+              <Eq>
+                <FieldRef Name="Category" />
+                <Value Type="Text">SOTG-35</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="15" Type="CALENDAR" WebPartZoneID="Main" DisplayName="VTC" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="VTC.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="EventDate"></FieldRef>
+          <FieldRef Name="EndDate"></FieldRef>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="WorkspaceLink" />
+          <FieldRef Name="Title"></FieldRef>
+          <FieldRef Name="Location"></FieldRef>
+          <FieldRef Name="Description" />
+          <FieldRef Name="Workspace"></FieldRef>
+          <FieldRef Name="MasterSeriesItemID"></FieldRef>
+          <FieldRef Name="fAllDayEvent"></FieldRef>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <CalendarViewStyles>&lt;CalendarViewStyle  Title=&#39;Day&#39; Type=&#39;day&#39; Template=&#39;CalendarViewdayChrome&#39; Sequence=&#39;1&#39; Default=&#39;FALSE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Week&#39; Type=&#39;week&#39; Template=&#39;CalendarViewweekChrome&#39; Sequence=&#39;2&#39; Default=&#39;TRUE&#39; /&gt;&lt;CalendarViewStyle  Title=&#39;Month&#39; Type=&#39;month&#39; Template=&#39;CalendarViewmonthChrome&#39; Sequence=&#39;3&#39; Default=&#39;FALSE&#39; /&gt;</CalendarViewStyles>
+        <Query>
+          <Where>
+            <And>
+              <DateRangesOverlap>
+                <FieldRef Name="EventDate"></FieldRef>
+                <FieldRef Name="EndDate"></FieldRef>
+                <FieldRef Name="RecurrenceID"></FieldRef>
+                <Value Type="DateTime">
+                  <Month></Month>
                 </Value>
               </DateRangesOverlap>
               <Eq>
@@ -667,22 +806,6 @@
             </And>
           </Where>
         </Query>
-        <ViewFields>
-          <FieldRef Name="EventDate" />
-          <FieldRef Name="EndDate" />
-          <FieldRef Name="Title" />
-          <FieldRef Name="fRecurrence" Explicit="TRUE" />
-        </ViewFields>
-        <ViewData>
-          <FieldRef Name="Title" Type="CalendarMonthTitle" />
-          <FieldRef Name="Title" Type="CalendarWeekTitle" />
-          <FieldRef Name="Location" Type="CalendarWeekLocation" />
-          <FieldRef Name="Title" Type="CalendarDayTitle" />
-          <FieldRef Name="Location" Type="CalendarDayLocation" />
-        </ViewData>
-        <CalendarViewStyles>&lt;CalendarViewStyle  Title='Day' Type='day' Template='CalendarViewdayChrome' Sequence='1' Default='FALSE' /&gt;&lt;CalendarViewStyle  Title='Week' Type='week' Template='CalendarViewweekChrome' Sequence='2' Default='TRUE' /&gt;&lt;CalendarViewStyle  Title='Month' Type='month' Template='CalendarViewmonthChrome' Sequence='3' Default='FALSE' /&gt;</CalendarViewStyles>
-        <RowLimit>0</RowLimit>
-        <Aggregations Value="Off" />
       </View>
     </Views>
     <Forms>
@@ -690,6 +813,5 @@
       <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
       <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
     </Forms>
-    <DefaultDescription>$Resources:camlidE14;</DefaultDescription>
   </MetaData>
 </List>

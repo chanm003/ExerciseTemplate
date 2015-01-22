@@ -8,7 +8,7 @@
       <FieldRef ID="{fc83c269-1862-4653-8bf4-ecd99fe3b51c}" DisplayName="Mission" Required="FALSE" Description="The mission associated with the document" Customization="" Name="Mission" />
       <FieldRef ID="{32b70e10-4f99-456a-8ff2-29a13d5aa16c}" DisplayName="Mission:Mission#" Customization="" Name="Mission_x003A_MissionNumber" ReadOnly="TRUE" />
     </FieldRefs>
-    <DocumentTemplate TargetName="~site/ExerciseDocuments/Templates/SITREPs.docx">
+    <DocumentTemplate TargetName="~site/ExerciseDocuments/Templates/SITREP.docx">
     </DocumentTemplate>
   </ContentType>
 </Elements>

@@ -175,6 +175,7 @@ namespace ExerciseTemplate.Features.Schema
             if (web != null)
             {
                 web.RegionalSettings.Time24 = true;
+                web.Update();
             }
         }
 

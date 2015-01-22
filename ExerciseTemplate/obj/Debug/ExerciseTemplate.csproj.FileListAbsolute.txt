@@ -2,3 +2,8 @@ c:\users\administrator\documents\visual studio 2013\Projects\ExerciseTemplate\Ex
 c:\users\administrator\documents\visual studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\bin\Debug\ExerciseTemplate.pdb
 c:\users\administrator\documents\visual studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\obj\Debug\ExerciseTemplate.dll
 c:\users\administrator\documents\visual studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\obj\Debug\ExerciseTemplate.pdb
+C:\Users\mike.chan.adm\Documents\Visual Studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\bin\Debug\ExerciseTemplate.dll
+C:\Users\mike.chan.adm\Documents\Visual Studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\bin\Debug\ExerciseTemplate.pdb
+C:\Users\mike.chan.adm\Documents\Visual Studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\obj\Debug\ExerciseTemplate.dll
+C:\Users\mike.chan.adm\Documents\Visual Studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\obj\Debug\ExerciseTemplate.pdb
+C:\Users\mike.chan.adm\Documents\Visual Studio 2013\Projects\ExerciseTemplate\ExerciseTemplate\obj\Debug\ExerciseTemplate.csprojResolveAssemblyReference.cache

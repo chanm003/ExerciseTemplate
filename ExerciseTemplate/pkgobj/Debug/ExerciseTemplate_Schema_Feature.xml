@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Provisions site columns, content types, lists, libraries, and views required for the Exercise Template.  Use this if you wish to build your own custom pages." Id="1e245775-a6fb-49f9-be29-dae9a0e1fa73" Scope="Web" Title="Exercise Template - Schema Provisioning">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Provisions site columns, content types, lists, libraries, and views required for the Exercise Template.  Use this if you wish to build your own custom pages." Id="1e245775-a6fb-49f9-be29-dae9a0e1fa73" ReceiverAssembly="ExerciseTemplate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c0ecfc45a4877f8c" ReceiverClass="ExerciseTemplate.Features.Schema.SchemaEventReceiver" Scope="Web" Title="Exercise Template - Schema Provisioning">
   <ElementManifests>
     <ElementManifest Location="AirAssets\Elements.xml" />
     <ElementFile Location="AirAssets\Schema.xml" />
@@ -22,9 +22,6 @@
     <ElementManifest Location="ExerciseAnnouncements\Elements.xml" />
     <ElementFile Location="ExerciseAnnouncements\Schema.xml" />
     <ElementManifest Location="ExerciseAnnouncementsInstance\Elements.xml" />
-    <ElementManifest Location="ExerciseCalendar\Elements.xml" />
-    <ElementFile Location="ExerciseCalendar\Schema.xml" />
-    <ElementManifest Location="ExerciseCalendarInstance\Elements.xml" />
     <ElementManifest Location="HelpDesk\Elements.xml" />
     <ElementFile Location="HelpDesk\Schema.xml" />
     <ElementManifest Location="HelpDeskInstance\Elements.xml" />
@@ -88,7 +85,7 @@
     <ElementManifest Location="SITREP\Elements.xml" />
     <ElementManifest Location="WatchLogEvent\Elements.xml" />
     <ElementManifest Location="ExerciseSiteColumns\Elements.xml" />
-    <ElementManifest Location="App\Elements.xml" />
+    <ElementManifest Location="app\Elements.xml" />
     <ElementManifest Location="EXCON\Elements.xml" />
     <ElementFile Location="EXCON\Schema.xml" />
     <ElementFile Location="EXCON\EditDlg.htm" />
@@ -145,5 +142,8 @@
     <ElementFile Location="SOTG3\Repair.aspx" />
     <ElementFile Location="SOTG3\Upload.aspx" />
     <ElementManifest Location="SOTG3Instance\Elements.xml" />
+    <ElementManifest Location="ExerciseCalendarInstance\Elements.xml" />
+    <ElementManifest Location="ExerciseCalendar\Elements.xml" />
+    <ElementFile Location="ExerciseCalendar\Schema.xml" />
   </ElementManifests>
 </Feature>
