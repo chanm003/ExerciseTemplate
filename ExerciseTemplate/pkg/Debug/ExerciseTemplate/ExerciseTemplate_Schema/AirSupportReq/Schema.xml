@@ -4,6 +4,9 @@
     <ContentTypes>
       <ContentType ID="0x01005b4ceb6b00ed445c80b704b26c40ba8c" Name="Item">
         <FieldRefs>
+          <FieldRef ID="{56ae3261-0d3d-4e0c-b067-416736c28591}" Name="MissionStartDate" />
+          <FieldRef ID="{98dcf62e-0453-49c3-b585-527eac9cbdc7}" Name="MissionEndDate" />
+          <FieldRef ID="{b161c967-87dc-4033-b607-3b68eb149091}" Name="MissionDateFlex" />
           <FieldRef ID="{c4e99c00-85ef-4801-8e4d-76bd9a4714f0}" Name="RequestingOrganization" />
           <FieldRef ID="{4ce3a814-d111-4bba-ab16-d577857c993c}" Name="RequestorFirstName" />
           <FieldRef ID="{87c1527f-1985-418c-b57b-9a3c7536c991}" Name="RequestorLastName" />
@@ -15,9 +18,6 @@
           <FieldRef ID="{ed230308-61a3-45d0-a1b4-71d39e663513}" Name="OperationType" />
           <FieldRef ID="{8269b97f-1b3b-4a27-a874-768b4a2f13c1}" Name="AirfieldsToBeUsed" />
           <FieldRef ID="{f6214f15-7d84-401a-9a2d-72d0e288fd86}" Name="NumberOfPAX" />
-          <FieldRef ID="{56ae3261-0d3d-4e0c-b067-416736c28591}" Name="MissionStartDate" />
-          <FieldRef ID="{98dcf62e-0453-49c3-b585-527eac9cbdc7}" Name="MissionEndDate" />
-          <FieldRef ID="{b161c967-87dc-4033-b607-3b68eb149091}" Name="MissionDateFlex" />
           <FieldRef ID="{150a35bc-45a7-4fc3-b022-3a68f58b19c2}" Name="JustifyMissionSupport" />
           <!--Aircraft MDS field SHOWN only in EditForm.aspx (but separate tab)-->
           <FieldRef ID="{0df828ac-11a9-4a8c-829e-466db2a2385e}" Name="AircraftMDS" />
@@ -322,5 +322,6 @@
       <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
       <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
     </Forms>
+    <Validation Message="Mission End Date cannot precede Mission Start Date">=MissionStartDate&lt;=MissionEndDate</Validation>
   </MetaData>
 </List>

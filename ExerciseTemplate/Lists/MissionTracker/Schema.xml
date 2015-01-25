@@ -198,5 +198,6 @@
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
     </Views>
+    <Validation Message="Expected Termination cannot precede Expected Execution">=ExpectedExecution&lt;=ExpectedTermination</Validation>
   </MetaData>
 </List>

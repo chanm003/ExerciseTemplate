@@ -115,7 +115,7 @@
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" RecurrenceRowset="TRUE" TabularView="FALSE" MobileView="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink>main.xsl</XslLink>
         <Query>
           <Where>
@@ -149,7 +149,7 @@
         </Query>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_alleventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="AllItems.aspx" DefaultBaseView="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
@@ -173,7 +173,7 @@
         </Query>
       </View>
       <View BaseViewID="2" Type="CALENDAR" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_calendarview;" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="calendar.aspx" RecurrenceRowset="TRUE" DefaultView="TRUE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -212,7 +212,7 @@
         </Query>
       </View>
       <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_curreventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="MyItems.aspx" ReqAuth="TRUE" RecurrenceRowset="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <JSLink>clienttemplates.js</JSLink>
         <ParameterBindings>
@@ -257,7 +257,7 @@
         RecurrenceRowset="TRUE" 
         DefaultView="FALSE" 
         MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -302,7 +302,7 @@
         </Query>
       </View>
       <View BaseViewID="5" Type="CALENDAR" WebPartZoneID="Main" DisplayName="Battle Rhythm" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="BattleRhythm.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -348,7 +348,7 @@
         </Query>
       </View>
       <View BaseViewID="6" Type="CALENDAR" WebPartZoneID="Main" DisplayName="EXCON" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="excon.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -394,7 +394,7 @@
         </Query>
       </View>
       <View BaseViewID="7" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOCC-Intel" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOCCIntel.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -440,7 +440,7 @@
         </Query>
       </View>
       <View BaseViewID="8" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOCC-Operations" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOCCOperations.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -486,7 +486,7 @@
         </Query>
       </View>
       <View BaseViewID="9" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOCC-SIGCEN" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOCCSIGCEN.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -532,7 +532,7 @@
         </Query>
       </View>
       <View BaseViewID="10" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOCC-SUPCEN" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOCCSUPCEN.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -578,7 +578,7 @@
         </Query>
       </View>
       <View BaseViewID="11" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOATG" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOATG.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -624,7 +624,7 @@
         </Query>
       </View>
       <View BaseViewID="12" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOTG-15" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOTG-15.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -670,7 +670,7 @@
         </Query>
       </View>
       <View BaseViewID="13" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOTG-25" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOTG-25.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -716,7 +716,7 @@
         </Query>
       </View>
       <View BaseViewID="14" Type="CALENDAR" WebPartZoneID="Main" DisplayName="SOTG-35" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="SOTG-35.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -762,7 +762,7 @@
         </Query>
       </View>
       <View BaseViewID="15" Type="CALENDAR" WebPartZoneID="Main" DisplayName="VTC" MobileView="TRUE"  SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="VTC.aspx" RecurrenceRowset="TRUE" DefaultView="FALSE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />

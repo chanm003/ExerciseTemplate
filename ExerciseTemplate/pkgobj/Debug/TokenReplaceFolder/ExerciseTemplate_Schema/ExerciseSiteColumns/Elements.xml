@@ -69,7 +69,7 @@
     Group="Exercise Columns"
     ID="{FC83C269-1862-4653-8BF4-ECD99FE3B51C}"
     Name="Mission"
-    Customization="" />
+    StaticName="Mission" />
  
   <Field Type="DateTime"
          DisplayName="Date Time Group"
