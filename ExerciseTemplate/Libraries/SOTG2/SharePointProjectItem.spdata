@@ -8,4 +8,7 @@
     <ProjectItemFile Source="Repair.aspx" Target="SOTG2\" Type="ElementFile" />
     <ProjectItemFile Source="Upload.aspx" Target="SOTG2\" Type="ElementFile" />
   </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x010100010f6ca7f90541faba2cc0c959767716" />
+  </ExtensionData>
 </ProjectItem>

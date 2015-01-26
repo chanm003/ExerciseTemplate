@@ -9,6 +9,6 @@
     <ProjectItemFile Source="Upload.aspx" Target="EXCON\" Type="ElementFile" />
   </Files>
   <ExtensionData>
-    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x010042311577f7954384bdf9ccc59c225e58" />
+    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x010100b396c8f7bed14983929eaf3ac52fd4f9" />
   </ExtensionData>
 </ProjectItem>

@@ -52,7 +52,7 @@
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,camlid4;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/announce.png" Url="AllItems.aspx">
         <Toolbar Type="Standard"  ShowAlways="TRUE" />
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
@@ -132,7 +132,7 @@
           </Where>
         </Query>
         <Toolbar Type="Standard"  ShowAlways="TRUE" />
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
       </View>
     </Views>
     <Forms>

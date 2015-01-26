@@ -104,7 +104,7 @@
           </OrderBy>
         </Query>
         <Toolbar Type="Standard" ShowAlways="TRUE"/>
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
       </View>
       <View BaseViewID="1" DisplayName="Ongoing" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Ongoing.aspx">
         <ViewFields>
@@ -129,7 +129,7 @@
           </Where>
         </Query>
         <Toolbar Type="Standard" ShowAlways="TRUE"/>
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
       </View>
       <View BaseViewID="2" DisplayName="Closed" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Closed.aspx">
         <ViewFields>
@@ -154,7 +154,7 @@
           </Where>
         </Query>
         <Toolbar Type="Standard" ShowAlways="TRUE"/>
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
       </View>
       <View BaseViewID="3" DisplayName="SOCC" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOCC.aspx">
         <ViewFields>
@@ -174,7 +174,7 @@
           </OrderBy>
         </Query>
         <Toolbar Type="Standard" ShowAlways="TRUE"/>
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
       </View>
       <View BaseViewID="4" DisplayName="Gantt" Type="GANTT" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Gantt.aspx">
         <ViewFields>
@@ -195,7 +195,7 @@
           </OrderBy>
         </Query>
         <Toolbar Type="Standard" ShowAlways="TRUE"/>
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
       </View>
     </Views>
     <Validation Message="Expected Termination cannot precede Expected Execution">=ExpectedExecution&lt;=ExpectedTermination</Validation>

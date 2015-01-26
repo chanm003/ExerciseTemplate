@@ -294,6 +294,7 @@
         </Query>
         <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
       </View>
     </Views>
     <Forms>

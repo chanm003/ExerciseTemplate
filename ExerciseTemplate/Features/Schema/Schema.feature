@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1e245775-a6fb-49f9-be29-dae9a0e1fa73" description="Provisions site columns, content types, lists, libraries, and views required for the Exercise Template.  Use this if you wish to build your own custom pages." featureId="1e245775-a6fb-49f9-be29-dae9a0e1fa73" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.0fc613ac-9e97-4548-bff2-25de76843306.FullName$" solutionId="00000000-0000-0000-0000-000000000000" title="Exercise Template - Schema Provisioning" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
   <projectItems>
-    <projectItemReference itemId="189319ae-c889-40dc-8931-f1ab514bcfe6" />
-    <projectItemReference itemId="92aaaf47-4430-4254-9e97-69b8a2366228" />
     <projectItemReference itemId="61520955-7589-4b52-bfae-35bb2320ee7b" />
     <projectItemReference itemId="0dbcec77-18dd-45a4-88b6-17e6d3b0b6e1" />
     <projectItemReference itemId="5472de90-a041-47fb-a5f8-a759de91eea5" />
@@ -56,23 +54,23 @@
     <projectItemReference itemId="fe3f232a-d233-4850-a77d-2e91e2282466" />
     <projectItemReference itemId="c52de089-2580-44c4-b469-cc06662bc6d3" />
     <projectItemReference itemId="01319a03-00dd-4f92-aedc-1fd15cd4af4f" />
-    <projectItemReference itemId="82afd92b-e09c-4195-ae7a-d46219dfc71b" />
-    <projectItemReference itemId="45e186fe-4f7e-4d94-904c-3f13a6a11c60" />
     <projectItemReference itemId="397c265b-5864-4fdc-b028-2471a21b3299" />
     <projectItemReference itemId="73e03cec-3859-4d1b-9d6c-c507e2fd70b3" />
     <projectItemReference itemId="6be59665-1ef5-41eb-9d33-be5277bd2f4a" />
     <projectItemReference itemId="2767b357-a581-4c84-83bd-efa1a06aec3c" />
-    <projectItemReference itemId="5d133852-2188-4b41-8ac3-6a10cfbc40bc" />
-    <projectItemReference itemId="61805f77-f0d5-4b08-a12a-f77035f504d3" />
     <projectItemReference itemId="68649d61-c885-4495-8aa5-9489d43885ee" />
     <projectItemReference itemId="820a1f35-7d94-4188-bc2d-af8a47aec5fc" />
-    <projectItemReference itemId="39e6c725-7893-4dc7-9bb3-297c31f483fc" />
-    <projectItemReference itemId="7becea19-5b17-41fa-9522-6ef7c4e7818e" />
-    <projectItemReference itemId="baec8fdd-ff78-4435-871a-061d3a1fdf83" />
-    <projectItemReference itemId="fc08be3e-96fc-4488-bea9-6d54b01bf0fa" />
-    <projectItemReference itemId="6dde5fa4-37a9-43d1-99a8-8ad49c625563" />
-    <projectItemReference itemId="bcd1adb6-54ca-4402-89c2-c15c2188c37b" />
     <projectItemReference itemId="8684eb42-1e33-4642-8cd2-87aa89b44b81" />
     <projectItemReference itemId="3e84d76e-5131-4a46-9406-b6fa5477765f" />
+    <projectItemReference itemId="4c4e7eba-ac29-440f-8c1b-7bd711ac50be" />
+    <projectItemReference itemId="e13f91b9-fbc4-4cdd-9474-96b3020f42c8" />
+    <projectItemReference itemId="55e18f02-6f54-4b82-957e-4612790a3092" />
+    <projectItemReference itemId="bc9d1880-a1ee-49db-bec2-f5e66316c6a2" />
+    <projectItemReference itemId="8d40b1d4-a138-4a9d-944c-455c2624077c" />
+    <projectItemReference itemId="59b2c476-3d7f-4ff8-95f1-a2a5018dacd1" />
+    <projectItemReference itemId="2a0972ef-8d83-487c-85be-dd989342e2db" />
+    <projectItemReference itemId="134d81ea-d8c8-486e-8393-5f1214c1dc6b" />
+    <projectItemReference itemId="c142db9f-df83-4c7d-a88a-4d3d73e9191c" />
+    <projectItemReference itemId="98c19d66-3c0e-41a7-8412-34a21d45c3e1" />
   </projectItems>
 </feature>

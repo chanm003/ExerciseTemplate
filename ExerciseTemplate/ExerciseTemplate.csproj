@@ -83,10 +83,10 @@
       <SharePointProjectItemId>{01319a03-00dd-4f92-aedc-1fd15cd4af4f}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\EXCON\EXCONInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{45e186fe-4f7e-4d94-904c-3f13a6a11c60}</SharePointProjectItemId>
+      <SharePointProjectItemId>{55e18f02-6f54-4b82-957e-4612790a3092}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\EXCON\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{82afd92b-e09c-4195-ae7a-d46219dfc71b}</SharePointProjectItemId>
+      <SharePointProjectItemId>{bc9d1880-a1ee-49db-bec2-f5e66316c6a2}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\ExerciseDocuments\ExerciseDocumentsInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{73e03cec-3859-4d1b-9d6c-c507e2fd70b3}</SharePointProjectItemId>
@@ -101,10 +101,10 @@
       <SharePointProjectItemId>{2767b357-a581-4c84-83bd-efa1a06aec3c}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOCC\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5d133852-2188-4b41-8ac3-6a10cfbc40bc}</SharePointProjectItemId>
+      <SharePointProjectItemId>{8d40b1d4-a138-4a9d-944c-455c2624077c}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOCC\SOCCInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{61805f77-f0d5-4b08-a12a-f77035f504d3}</SharePointProjectItemId>
+      <SharePointProjectItemId>{59b2c476-3d7f-4ff8-95f1-a2a5018dacd1}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOCOMFMD\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{68649d61-c885-4495-8aa5-9489d43885ee}</SharePointProjectItemId>
@@ -113,28 +113,22 @@
       <SharePointProjectItemId>{820a1f35-7d94-4188-bc2d-af8a47aec5fc}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOTG1\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{39e6c725-7893-4dc7-9bb3-297c31f483fc}</SharePointProjectItemId>
+      <SharePointProjectItemId>{2a0972ef-8d83-487c-85be-dd989342e2db}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOTG1\SOTG1Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{7becea19-5b17-41fa-9522-6ef7c4e7818e}</SharePointProjectItemId>
+      <SharePointProjectItemId>{134d81ea-d8c8-486e-8393-5f1214c1dc6b}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOTG2\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{baec8fdd-ff78-4435-871a-061d3a1fdf83}</SharePointProjectItemId>
+      <SharePointProjectItemId>{c142db9f-df83-4c7d-a88a-4d3d73e9191c}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOTG2\SOTG2Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{fc08be3e-96fc-4488-bea9-6d54b01bf0fa}</SharePointProjectItemId>
+      <SharePointProjectItemId>{98c19d66-3c0e-41a7-8412-34a21d45c3e1}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOTG3\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6dde5fa4-37a9-43d1-99a8-8ad49c625563}</SharePointProjectItemId>
+      <SharePointProjectItemId>{e13f91b9-fbc4-4cdd-9474-96b3020f42c8}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOTG3\SOTG3Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{bcd1adb6-54ca-4402-89c2-c15c2188c37b}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\AirAssets\AirAssetsInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{92aaaf47-4430-4254-9e97-69b8a2366228}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\AirAssets\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{189319ae-c889-40dc-8931-f1ab514bcfe6}</SharePointProjectItemId>
+      <SharePointProjectItemId>{4c4e7eba-ac29-440f-8c1b-7bd711ac50be}</SharePointProjectItemId>
     </None>
     <None Include="Lists\AirSupportReq\AirSupportReqInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0dbcec77-18dd-45a4-88b6-17e6d3b0b6e1}</SharePointProjectItemId>
@@ -364,9 +358,6 @@
     <Content Include="Libraries\SOTG3\Schema.xml" />
     <Content Include="Libraries\SOTG3\SOTG3Instance\Elements.xml" />
     <Content Include="Libraries\SOTG3\Upload.aspx" />
-    <Content Include="Lists\AirAssets\AirAssetsInstance\Elements.xml" />
-    <Content Include="Lists\AirAssets\Elements.xml" />
-    <Content Include="Lists\AirAssets\Schema.xml" />
     <Content Include="Lists\AirSupportReq\AirSupportReqInstance\Elements.xml" />
     <Content Include="Lists\AirSupportReq\Elements.xml" />
     <Content Include="Lists\AirSupportReq\Schema.xml" />
@@ -434,7 +425,9 @@
     <Content Include="Lists\WatchLogSotg25\Schema.xml" />
     <Content Include="Lists\WatchLogSotg25\WatchLogSotg25Instance\Elements.xml" />
     <Content Include="Lists\WatchLogSotg35\Elements.xml" />
-    <Content Include="Lists\WatchLogSotg35\Schema.xml" />
+    <Content Include="Lists\WatchLogSotg35\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Lists\WatchLogSotg35\WatchLogSotg35Instance\Elements.xml" />
     <Content Include="Modules\ExerciseTemplates\Elements.xml" />
     <Content Include="Modules\SpreadsheetsForExcelWebParts\Elements.xml" />

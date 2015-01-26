@@ -150,7 +150,7 @@
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_alleventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="AllItems.aspx" DefaultBaseView="TRUE">
         <Toolbar Type="Standard" ShowAlways="TRUE" />
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ParameterBindings>
@@ -213,7 +213,7 @@
       </View>
       <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_curreventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="MyItems.aspx" ReqAuth="TRUE" RecurrenceRowset="TRUE">
         <Toolbar Type="Standard" ShowAlways="TRUE" />
-        <XslLink Default="TRUE">main.xsl</XslLink>
+        <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
         <JSLink>clienttemplates.js</JSLink>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
