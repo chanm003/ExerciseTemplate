@@ -9,6 +9,6 @@
         SecurityBits="11"
         Sequence="410"
         DisplayName="MSEL"
-        Description="My List Definition"
-        Image="/_layouts/images/itgen.png"/>
+        Description=""
+        Image="/_layouts/15/images/itgen.png"/>
 </Elements>

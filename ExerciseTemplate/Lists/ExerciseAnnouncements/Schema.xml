@@ -14,7 +14,7 @@
     </Fields>
     <Views>
       <View BaseViewID="0" FreeForm="TRUE" Type="HTML" MobileView="TRUE" TabularView="FALSE">
-        <Toolbar Type="Standard"  ShowAlways="TRUE" />
+        <Toolbar Type="Standard"   />
         <XslLink>main.xsl</XslLink>
         <Query>
           <Where>
@@ -51,7 +51,7 @@
         </ParameterBindings>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,camlid4;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/announce.png" Url="AllItems.aspx">
-        <Toolbar Type="Standard"  ShowAlways="TRUE" />
+        <Toolbar Type="Standard"   />
         <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ParameterBindings>
@@ -72,7 +72,7 @@
         </Query>
       </View>
       <View BaseViewID="3" FreeForm="TRUE" Type="HTML" TabularView="FALSE">
-        <Toolbar Type="Standard"  ShowAlways="TRUE" />
+        <Toolbar Type="Standard"   />
         <XslLink>main.xsl</XslLink>
         <Query>
           <Where>
@@ -131,7 +131,7 @@
             </Or>
           </Where>
         </Query>
-        <Toolbar Type="Standard"  ShowAlways="TRUE" />
+        <Toolbar Type="Standard"   />
         <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
       </View>
     </Views>

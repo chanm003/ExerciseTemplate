@@ -116,7 +116,7 @@
         </Query>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,All_Documents;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/AllItems.aspx">
-        <Toolbar Type="Standard" ShowAlways="TRUE" />
+        <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
@@ -230,7 +230,7 @@
         </Query>
       </View>
       <View Scope="RecursiveAll" BaseViewID="10" Type="HTML" WebPartZoneID="Main" DisplayName="Exercise Templates" DefaultView="FALSE" MobileView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/ExerciseTemplates.aspx">
-        <Toolbar Type="Standard" ShowAlways="TRUE" />
+        <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>

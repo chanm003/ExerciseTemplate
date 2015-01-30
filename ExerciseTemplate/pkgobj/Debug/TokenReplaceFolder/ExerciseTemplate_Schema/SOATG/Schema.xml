@@ -18,7 +18,7 @@
           <FieldRef ID="{fc83c269-1862-4653-8bf4-ecd99fe3b51c}" DisplayName="Mission" Required="FALSE" Description="The mission associated with the document" Customization="" Name="Mission" />
           <FieldRef ID="{32b70e10-4f99-456a-8ff2-29a13d5aa16c}" DisplayName="Mission:Mission#" Customization="" Name="Mission_x003A_MissionNumber" ReadOnly="TRUE" />
         </FieldRefs>
-        <DocumentTemplate TargetName="~site/ExerciseDocuments/Templates/FRAGO.docx"></DocumentTemplate>
+        <DocumentTemplate TargetName="~site/ExerciseDocuments/Templates/FRAGOs.docx"></DocumentTemplate>
       </ContentType>
       <ContentType ID="0x0101001408602C312B43C5A3C18A86FBD51302" Name="OPORD" Group="Custom Content Types" Description="OPORD Template" Inherits="TRUE" Version="0">
         <FieldRefs>
@@ -36,7 +36,7 @@
           <FieldRef ID="{fc83c269-1862-4653-8bf4-ecd99fe3b51c}" DisplayName="Mission" Required="FALSE" Description="The mission associated with the document" Customization="" Name="Mission" />
           <FieldRef ID="{32b70e10-4f99-456a-8ff2-29a13d5aa16c}" DisplayName="Mission:Mission#" Customization="" Name="Mission_x003A_MissionNumber" ReadOnly="TRUE" />
         </FieldRefs>
-        <DocumentTemplate TargetName="~site/ExerciseDocuments/Templates/SITREP.docx"></DocumentTemplate>
+        <DocumentTemplate TargetName="~site/ExerciseDocuments/Templates/SITREPs.docx"></DocumentTemplate>
       </ContentType>
     </ContentTypes>
     <Fields>
@@ -123,15 +123,50 @@
       <Field Type="Lookup" DisplayName="Mission:Mission#" List="{3A753E8F-5345-409E-904D-2FD50B0523C5}" ShowField="MissionNumber" FieldRef="FC83C269-1862-4653-8BF4-ECD99FE3B51C" ReadOnly="TRUE" Group="Partner Nation Columns" ID="{32b70e10-4f99-456a-8ff2-29a13d5aa16c}" Name="Mission_x003A_MissionNumber" Customization="" WebId="{9be50f48-05b1-416f-8073-ba552abc5aff}" SourceID="{9be50f48-05b1-416f-8073-ba552abc5aff}" StaticName="Mission_x005f_x003A_MissionNumber" />
     </Fields>
     <Views>
-      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE" FreeForm="TRUE">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE" FreeForm="TRUE">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Position="After" Type="Freeform">
+          <IfHasRights>
+            <RightsChoices>
+              <RightsGroup PermAddListItems="required" />
+            </RightsChoices>
+            <Then>
+              <HTML><![CDATA[<div class="tb"><img src="/_layouts/15/images/caladd.gif?rev=23" alt="" />&#160;<a class="ms-addnew" id="idAddNewDoc" href="]]></HTML>
+              <HttpVDir />
+              <HTML><![CDATA[/_layouts/15/Upload.aspx?List=]]></HTML>
+              <ListProperty Select="Name" />
+              <HTML><![CDATA[&RootFolder=]]></HTML>
+              <GetVar Name="RootFolder" URLEncode="TRUE" />
+              <HTML><![CDATA[" onclick="javascript:NewItem(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <HttpVDir />
+              </ScriptQuote>
+              <HTML><![CDATA[/_layouts/15/Upload.aspx?List=]]></HTML>
+              <ListProperty Select="Name" />
+              <HTML><![CDATA[&RootFolder=]]></HTML>
+              <GetVar Name="RootFolder" URLEncode="TRUE" />
+              <HTML><![CDATA[', true);javascript:return false;" target="_self">]]></HTML>
+              <HTML>$Resources:core,Add_New_Document;</HTML>
+              <HTML><![CDATA[</a></div>]]></HTML>
+            </Then>
+          </IfHasRights>
+        </Toolbar>
         <ViewFields>
-          <FieldRef Name="DocIcon"></FieldRef>
-          <FieldRef Name="LinkFilenameNoMenu"></FieldRef>
-          <FieldRef Name="Editor"></FieldRef>
-        </ViewFields>
+          
+          
+          
+        <FieldRef Name="DocIcon"></FieldRef><FieldRef Name="LinkFilenameNoMenu"></FieldRef><FieldRef Name="Editor"></FieldRef></ViewFields>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto)" />
@@ -140,13 +175,13 @@
         </ParameterBindings>
         <Query>
           <OrderBy>
-            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
-          </OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
         </Query>
-      </View>
-      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,All_Documents;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/AllItems.aspx">
-        <Toolbar Type="Standard" ShowAlways="TRUE" />
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,All_Documents;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/dlicon.png?rev=23" Url="Forms/AllItems.aspx">
+        <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           <FieldRef Name="DocIcon"></FieldRef>
@@ -156,6 +191,7 @@
           <FieldRef Name="Modified"></FieldRef>
           <FieldRef Name="Editor"></FieldRef>
         </ViewFields>
+
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
@@ -168,92 +204,105 @@
             <FieldRef Name="ID" Ascending="FALSE" />
           </OrderBy>
         </Query>
-      </View>
-      <View BaseViewID="2" Type="HTML" FileDialog="TRUE" TabularView="FALSE" DisplayName="$Resources:core,File_Dialog_View;" Hidden="TRUE" Path="filedlg.htm" ModerationType="Moderator">
+      </View><View BaseViewID="2" Type="HTML" FileDialog="TRUE" TabularView="FALSE" DisplayName="$Resources:core,File_Dialog_View;" Hidden="TRUE" Path="filedlg.htm" ModerationType="Moderator">
         <Toolbar Type="Standard" />
         <ViewFields>
-          <FieldRef Name="DocIcon"></FieldRef>
-          <FieldRef Name="BaseName"></FieldRef>
-          <FieldRef Name="Editor" TextOnly="TRUE"></FieldRef>
-          <FieldRef Name="Modified" TextOnly="TRUE"></FieldRef>
-        </ViewFields>
+          
+          
+          
+          
+        <FieldRef Name="DocIcon"></FieldRef><FieldRef Name="BaseName"></FieldRef><FieldRef Name="Editor" TextOnly="TRUE"></FieldRef><FieldRef Name="Modified" TextOnly="TRUE"></FieldRef></ViewFields>
         <Query>
           <OrderBy>
-            <FieldRef Name="FSObjType" Key="Primary" />
-            <FieldRef Name="FileLeafRef" />
-          </OrderBy>
+            
+            
+          <FieldRef Name="FSObjType" Key="Primary" /><FieldRef Name="FileLeafRef" /></OrderBy>
         </Query>
-      </View>
-      <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Explorer_View;" TabularView="FALSE" Url="Forms/WebFldr.aspx" SetupPath="pages\webfldr.aspx" RequiresClientIntegration="TRUE" ReadOnly="TRUE">
+      </View><View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Explorer_View;" TabularView="FALSE" Url="Forms/WebFldr.aspx" SetupPath="pages\webfldr.aspx" RequiresClientIntegration="TRUE" ReadOnly="TRUE">
         <Toolbar Type="Standard" />
         <XslLink>main.xsl</XslLink>
         <ViewFields />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" />
         </ParameterBindings>
-        <Query />
-      </View>
-      <View BaseViewID="6" Type="HTML" TabularView="FALSE">
+      <Query /></View><View BaseViewID="50" Type="HTML" MobileView="TRUE" TabularView="TRUE">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
-        <RowLimit Paged="TRUE">30</RowLimit>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">15</RowLimit>
         <ViewFields>
-          <FieldRef Name="DocIcon"></FieldRef>
-          <FieldRef Name="LinkFilename"></FieldRef>
-          <FieldRef Name="Editor"></FieldRef>
-        </ViewFields>
+          
+          
+        <FieldRef Name="DocIcon"></FieldRef><FieldRef Name="LinkFilename"></FieldRef></ViewFields>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
         </ParameterBindings>
         <Query>
           <OrderBy>
-            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
-          </OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
         </Query>
-      </View>
-      <View BaseViewID="7" AggregateView="TRUE" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Merge_Documents;" TabularView="FALSE" ToolbarTemplate="MergeToolBar" DefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/Combine.aspx" Hidden="TRUE">
+      </View><View BaseViewID="6" Type="HTML" TabularView="FALSE">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
-          <FieldRef Name="DocIcon"></FieldRef>
-          <FieldRef Name="LinkFilename"></FieldRef>
-          <FieldRef Name="Combine"></FieldRef>
-          <FieldRef Name="Modified"></FieldRef>
-          <FieldRef Name="Editor"></FieldRef>
-        </ViewFields>
+          
+          
+          
+        <FieldRef Name="DocIcon"></FieldRef><FieldRef Name="LinkFilename"></FieldRef><FieldRef Name="Editor"></FieldRef></ViewFields>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
         </ParameterBindings>
         <Query>
           <OrderBy>
-            <FieldRef Name="FileLeafRef" />
-          </OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
         </Query>
-      </View>
-      <View BaseViewID="9" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Relink_Documents;" ToolbarTemplate="RelinkToolBar" TabularView="FALSE" DefaultView="FALSE" Url="Forms/repair.aspx" ImageUrl="/_layouts/images/dlicon.png" Hidden="TRUE">
+      </View><View BaseViewID="7" AggregateView="TRUE" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Merge_Documents;" TabularView="FALSE" ToolbarTemplate="MergeToolBar" DefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/dlicon.png?rev=23" Url="Forms/Combine.aspx" Hidden="TRUE">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
-          <FieldRef Name="DocIcon"></FieldRef>
-          <FieldRef Name="LinkFilenameNoMenu"></FieldRef>
-          <FieldRef Name="RepairDocument"></FieldRef>
-          <FieldRef Name="Modified"></FieldRef>
-          <FieldRef Name="Editor"></FieldRef>
-          <FieldRef Name="ContentType"></FieldRef>
-          <FieldRef Name="TemplateUrl"></FieldRef>
-        </ViewFields>
+          
+          
+          
+          
+          
+        <FieldRef Name="DocIcon"></FieldRef><FieldRef Name="LinkFilename"></FieldRef><FieldRef Name="Combine"></FieldRef><FieldRef Name="Modified"></FieldRef><FieldRef Name="Editor"></FieldRef></ViewFields>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
         </ParameterBindings>
         <Query>
           <OrderBy>
-            <FieldRef Name="FileLeafRef" />
-          </OrderBy>
+            
+          <FieldRef Name="FileLeafRef" /></OrderBy>
+        </Query>
+      </View><View BaseViewID="9" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Relink_Documents;" ToolbarTemplate="RelinkToolBar" TabularView="FALSE" DefaultView="FALSE" Url="Forms/repair.aspx" ImageUrl="/_layouts/15/images/dlicon.png?rev=23" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="DocIcon"></FieldRef><FieldRef Name="LinkFilenameNoMenu"></FieldRef><FieldRef Name="RepairDocument"></FieldRef><FieldRef Name="Modified"></FieldRef><FieldRef Name="Editor"></FieldRef><FieldRef Name="ContentType"></FieldRef><FieldRef Name="TemplateUrl"></FieldRef></ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="FileLeafRef" /></OrderBy>
           <Where>
             <Neq>
               <FieldRef Name="xd_Signature" />
@@ -261,20 +310,18 @@
             </Neq>
           </Where>
         </Query>
-      </View>
-      <View BaseViewID="40" Type="HTML" WebPartZoneID="Main" DisplayName="assetLibTemp" DefaultView="FALSE" MobileView="FALSE" MobileDefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/Thumbnails.aspx" Hidden="TRUE">
+      </View><View BaseViewID="40" Type="HTML" WebPartZoneID="Main" DisplayName="assetLibTemp" DefaultView="FALSE" MobileView="FALSE" MobileDefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/dlicon.png?rev=23" Url="Forms/Thumbnails.aspx" Hidden="TRUE">
         <Toolbar Type="Standard" />
         <ViewFields>
-          <FieldRef Name="LinkFilename"></FieldRef>
-        </ViewFields>
+          
+        <FieldRef Name="LinkFilename"></FieldRef></ViewFields>
         <RowLimit>20</RowLimit>
         <Query>
           <OrderBy>
-            <FieldRef Name="LinkFilename" />
-          </OrderBy>
+            
+          <FieldRef Name="LinkFilename" /></OrderBy>
         </Query>
-      </View>
-      <View BaseViewID="4" Name="629298f8-2d37-4342-bbf3-1c19311af3b2" DisplayName="Daily Tasking Orders" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Daily Tasking Orders.aspx">
+      </View><View BaseViewID="4" Name="2cda898f-b31a-4d80-a5a2-a69192d35185" DisplayName="Daily Tasking Orders" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Daily Tasking Orders.aspx">
         <ViewFields>
           <FieldRef Name="DocIcon"></FieldRef>
           <FieldRef Name="LinkFilename"></FieldRef>
@@ -283,7 +330,7 @@
         </ViewFields>
         <Query>
           <OrderBy>
-            <FieldRef Name="ID" Ascending="FALSE" />  
+            <FieldRef Name="ID" Ascending="FALSE" />
           </OrderBy>
           <Where>
             <Eq>
@@ -292,11 +339,9 @@
             </Eq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" ShowAlways="TRUE" />
-        <XslLink Default="TRUE">main.xsl</XslLink>
-        <JSLink>clienttemplates.js</JSLink>
-      </View>
-    </Views>
+
+
+        <Toolbar Type="Standard" /><XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink></View></Views>
     <Forms>
       <Form Type="DisplayForm" SetupPath="pages\form.aspx" Url="Forms/DispForm.aspx" WebPartZoneID="Main" />
       <Form Type="EditForm" SetupPath="pages\form.aspx" Url="Forms/EditForm.aspx" WebPartZoneID="Main" />
@@ -382,7 +427,7 @@ frm.stFieldPrefix = ]]></HTML>
           </ScriptQuote>
           <HTML><![CDATA[;
 frm.stImagesPath = ]]></HTML>
-          <ScriptQuote>/_layouts/images/</ScriptQuote>
+          <ScriptQuote>/_layouts/15/images/</ScriptQuote>
           <HTML><![CDATA[;
 frm.wBaseType = ]]></HTML>
           <ListProperty Select="BaseType" />
@@ -495,6 +540,18 @@ frm.wBaseType = ]]></HTML>
             </Case>
           </Switch>
           <ContentTypes>
+            <HTML><![CDATA[
+    <script type = "text/javascript">
+        frmCurrent.MapCtName(]]></HTML>
+            <ScriptQuote>
+              <Property Select="Name" />
+            </ScriptQuote>
+            <HTML><![CDATA[ ,]]></HTML>
+            <ScriptQuote>
+              <Property Select="ID" />
+            </ScriptQuote>
+            <HTML><![CDATA[);
+    </script>]]></HTML>
             <IfSubString>
               <Expr1>0x0120</Expr1>
               <Expr2>
@@ -615,6 +672,5 @@ if (fldct != null)
         </ListFormClosing>
       </Form>
     </Forms>
-    <DefaultDescription>$Resources:core,camlidDc5;</DefaultDescription>
   </MetaData>
 </List>

@@ -57,7 +57,7 @@
         </ParameterBindings>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
-        <Toolbar Type="Standard" ShowAlways="TRUE" />
+        <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>

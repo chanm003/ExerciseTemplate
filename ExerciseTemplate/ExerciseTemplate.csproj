@@ -95,10 +95,10 @@
       <SharePointProjectItemId>{397c265b-5864-4fdc-b028-2471a21b3299}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOATG\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6be59665-1ef5-41eb-9d33-be5277bd2f4a}</SharePointProjectItemId>
+      <SharePointProjectItemId>{0acb6133-e967-401a-8e9b-81148ad120e3}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOATG\SOATGInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{2767b357-a581-4c84-83bd-efa1a06aec3c}</SharePointProjectItemId>
+      <SharePointProjectItemId>{e2ce6d17-885f-4d44-a64b-5f404a8b2130}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOCC\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8d40b1d4-a138-4a9d-944c-455c2624077c}</SharePointProjectItemId>
@@ -185,22 +185,22 @@
       <SharePointProjectItemId>{c1bd1e68-3c3b-44c1-9cd4-2c23197e00f8}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MessageTraffic\MessageTrafficInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f0a10d36-ee56-4efb-a4d6-324a4c82fe75}</SharePointProjectItemId>
+      <SharePointProjectItemId>{a98ab2d0-413b-4389-8856-06306ab54e62}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MessageTraffic\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b93f48b1-e53f-41b9-9a15-e577e28bf524}</SharePointProjectItemId>
+      <SharePointProjectItemId>{924a8f03-eb5a-47a2-b31d-3865e759a749}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MissionTracker\MissionTrackerInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{239c4618-7062-4963-8144-07c31281a92b}</SharePointProjectItemId>
+      <SharePointProjectItemId>{810696e4-c38c-40ad-83d6-2c0b83139004}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MissionTracker\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{780b81ca-c371-43b8-8d00-70a81220850b}</SharePointProjectItemId>
+      <SharePointProjectItemId>{298c3365-0b93-4240-b5ab-9335909dbf70}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MSEL\MSELInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c611f5bb-ce8f-4b42-847c-7ef3137382ea}</SharePointProjectItemId>
+      <SharePointProjectItemId>{410199d3-9784-4107-9645-c3be3b0bcf3a}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MSEL\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c3638b4d-0e32-47ab-92ad-df0c19cc7284}</SharePointProjectItemId>
+      <SharePointProjectItemId>{13789742-29df-4157-9a09-40c1557c72de}</SharePointProjectItemId>
     </None>
     <None Include="Lists\Navigation\NavigationInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7961d6a3-beb2-4fdc-97f3-e1d003afed48}</SharePointProjectItemId>

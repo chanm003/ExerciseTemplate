@@ -25,15 +25,6 @@
     <ElementManifest Location="KeyLeaders\Elements.xml" />
     <ElementFile Location="KeyLeaders\Schema.xml" />
     <ElementManifest Location="KeyLeadersInstance\Elements.xml" />
-    <ElementManifest Location="MessageTraffic\Elements.xml" />
-    <ElementFile Location="MessageTraffic\Schema.xml" />
-    <ElementManifest Location="MessageTrafficInstance\Elements.xml" />
-    <ElementManifest Location="MissionTracker\Elements.xml" />
-    <ElementFile Location="MissionTracker\Schema.xml" />
-    <ElementManifest Location="MissionTrackerInstance\Elements.xml" />
-    <ElementManifest Location="MSEL\Elements.xml" />
-    <ElementFile Location="MSEL\Schema.xml" />
-    <ElementManifest Location="MSELInstance\Elements.xml" />
     <ElementManifest Location="Navigation\Elements.xml" />
     <ElementFile Location="Navigation\Schema.xml" />
     <ElementManifest Location="NavigationInstance\Elements.xml" />
@@ -90,13 +81,6 @@
     <ElementFile Location="ExerciseDocuments\Repair.aspx" />
     <ElementFile Location="ExerciseDocuments\Upload.aspx" />
     <ElementManifest Location="ExerciseDocumentsInstance\Elements.xml" />
-    <ElementManifest Location="SOATG\Elements.xml" />
-    <ElementFile Location="SOATG\Schema.xml" />
-    <ElementFile Location="SOATG\EditDlg.htm" />
-    <ElementFile Location="SOATG\FileDlg.htm" />
-    <ElementFile Location="SOATG\Repair.aspx" />
-    <ElementFile Location="SOATG\Upload.aspx" />
-    <ElementManifest Location="SOATGInstance\Elements.xml" />
     <ElementManifest Location="SOCOMFMD\Elements.xml" />
     <ElementFile Location="SOCOMFMD\Schema.xml" />
     <ElementFile Location="SOCOMFMD\EditDlg.htm" />
@@ -142,5 +126,21 @@
     <ElementFile Location="SOTG2\Repair.aspx" />
     <ElementFile Location="SOTG2\Upload.aspx" />
     <ElementManifest Location="SOTG2Instance\Elements.xml" />
+    <ElementManifest Location="MSELInstance\Elements.xml" />
+    <ElementManifest Location="MSEL\Elements.xml" />
+    <ElementFile Location="MSEL\Schema.xml" />
+    <ElementManifest Location="MissionTrackerInstance\Elements.xml" />
+    <ElementManifest Location="MissionTracker\Elements.xml" />
+    <ElementFile Location="MissionTracker\Schema.xml" />
+    <ElementManifest Location="MessageTrafficInstance\Elements.xml" />
+    <ElementManifest Location="MessageTraffic\Elements.xml" />
+    <ElementFile Location="MessageTraffic\Schema.xml" />
+    <ElementManifest Location="SOATGInstance\Elements.xml" />
+    <ElementManifest Location="SOATG\Elements.xml" />
+    <ElementFile Location="SOATG\Schema.xml" />
+    <ElementFile Location="SOATG\EditDlg.htm" />
+    <ElementFile Location="SOATG\FileDlg.htm" />
+    <ElementFile Location="SOATG\Repair.aspx" />
+    <ElementFile Location="SOATG\Upload.aspx" />
   </ElementManifests>
 </Feature>

@@ -8,7 +8,7 @@
         OnQuickLaunch="TRUE"
         SecurityBits="11"
         Sequence="410"
-        DisplayName="Mission Tracker"
+        DisplayName="MissionTracker"
         Description="Creates a list to with the schema to track missions"
-        Image="/_layouts/images/itgen.png"/>
+        Image="/_layouts/15/images/itgen.png"/>
 </Elements>

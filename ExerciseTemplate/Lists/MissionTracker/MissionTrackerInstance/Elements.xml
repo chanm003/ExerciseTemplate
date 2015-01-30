@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Mission Tracker" OnQuickLaunch="FALSE" TemplateType="10000" Url="Lists/MissionTracker" Description="Track Mission Status"></ListInstance>
+  <ListInstance Title="Mission Tracker" OnQuickLaunch="FALSE" TemplateType="10000" Url="Lists/MissionTracker" Description="Inbound and outbound messages"></ListInstance>
 </Elements>

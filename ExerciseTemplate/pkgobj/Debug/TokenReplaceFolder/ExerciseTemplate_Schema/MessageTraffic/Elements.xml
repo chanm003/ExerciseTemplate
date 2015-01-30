@@ -8,7 +8,7 @@
         OnQuickLaunch="TRUE"
         SecurityBits="11"
         Sequence="410"
-        DisplayName="MessageTraffic"
-        Description="My List Definition"
-        Image="/_layouts/images/itgen.png"/>
+        DisplayName="Message Traffic"
+        Description=""
+        Image="/_layouts/15/images/itgen.png"/>
 </Elements>

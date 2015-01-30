@@ -5,6 +5,6 @@
     <ProjectItemFile Source="Schema.xml" Target="MissionTracker\" Type="ElementFile" />
   </Files>
   <ExtensionData>
-    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x01008e4ba8147d5a4b67aa933f55b2d6f49c" />
+    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x0100af0ff6de26954173b2827bf051962b8d" />
   </ExtensionData>
 </ProjectItem>
