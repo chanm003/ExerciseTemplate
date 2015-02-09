@@ -98,6 +98,22 @@
     <ElementFile Location="SOTG3\FileDlg.htm" />
     <ElementFile Location="SOTG3\Repair.aspx" />
     <ElementFile Location="SOTG3\Upload.aspx" />
+    <ElementManifest Location="MSELInstance\Elements.xml" />
+    <ElementManifest Location="MSEL\Elements.xml" />
+    <ElementFile Location="MSEL\Schema.xml" />
+    <ElementManifest Location="MissionTrackerInstance\Elements.xml" />
+    <ElementManifest Location="MissionTracker\Elements.xml" />
+    <ElementFile Location="MissionTracker\Schema.xml" />
+    <ElementManifest Location="MessageTrafficInstance\Elements.xml" />
+    <ElementManifest Location="MessageTraffic\Elements.xml" />
+    <ElementFile Location="MessageTraffic\Schema.xml" />
+    <ElementManifest Location="SOATGInstance\Elements.xml" />
+    <ElementManifest Location="SOATG\Elements.xml" />
+    <ElementFile Location="SOATG\Schema.xml" />
+    <ElementFile Location="SOATG\EditDlg.htm" />
+    <ElementFile Location="SOATG\FileDlg.htm" />
+    <ElementFile Location="SOATG\Repair.aspx" />
+    <ElementFile Location="SOATG\Upload.aspx" />
     <ElementManifest Location="EXCONInstance\Elements.xml" />
     <ElementManifest Location="EXCON\Elements.xml" />
     <ElementFile Location="EXCON\Schema.xml" />
@@ -126,21 +142,5 @@
     <ElementFile Location="SOTG2\Repair.aspx" />
     <ElementFile Location="SOTG2\Upload.aspx" />
     <ElementManifest Location="SOTG2Instance\Elements.xml" />
-    <ElementManifest Location="MSELInstance\Elements.xml" />
-    <ElementManifest Location="MSEL\Elements.xml" />
-    <ElementFile Location="MSEL\Schema.xml" />
-    <ElementManifest Location="MissionTrackerInstance\Elements.xml" />
-    <ElementManifest Location="MissionTracker\Elements.xml" />
-    <ElementFile Location="MissionTracker\Schema.xml" />
-    <ElementManifest Location="MessageTrafficInstance\Elements.xml" />
-    <ElementManifest Location="MessageTraffic\Elements.xml" />
-    <ElementFile Location="MessageTraffic\Schema.xml" />
-    <ElementManifest Location="SOATGInstance\Elements.xml" />
-    <ElementManifest Location="SOATG\Elements.xml" />
-    <ElementFile Location="SOATG\Schema.xml" />
-    <ElementFile Location="SOATG\EditDlg.htm" />
-    <ElementFile Location="SOATG\FileDlg.htm" />
-    <ElementFile Location="SOATG\Repair.aspx" />
-    <ElementFile Location="SOATG\Upload.aspx" />
   </ElementManifests>
 </Feature>
