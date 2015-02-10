@@ -130,6 +130,12 @@
     <None Include="Libraries\SOTG3\SOTG3Instance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4c4e7eba-ac29-440f-8c1b-7bd711ac50be}</SharePointProjectItemId>
     </None>
+    <None Include="Lists\AfterActionReports\AfterActionReportsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e9743d4e-41eb-48d8-b7db-67c9104f70bb}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AfterActionReports\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{99bbd78c-33e4-421d-aee1-482ba3556e6c}</SharePointProjectItemId>
+    </None>
     <None Include="Lists\AirSupportReq\AirSupportReqInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0dbcec77-18dd-45a4-88b6-17e6d3b0b6e1}</SharePointProjectItemId>
     </None>
@@ -213,12 +219,6 @@
     </None>
     <None Include="Lists\NodeStatus\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{cbcfb454-ddbc-44f4-95d7-b4bfcd95062a}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\OIL\OILInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{2c392999-c2c2-4799-8697-3786b6903ab4}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\OIL\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{bf9fb785-dae3-4659-bf7b-f0d5b67281fe}</SharePointProjectItemId>
     </None>
     <None Include="Lists\Phonebook\PhonebookInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e925518e-31ca-48ad-aaa3-b5cf8c72368e}</SharePointProjectItemId>
@@ -358,6 +358,9 @@
     <Content Include="Libraries\SOTG3\Schema.xml" />
     <Content Include="Libraries\SOTG3\SOTG3Instance\Elements.xml" />
     <Content Include="Libraries\SOTG3\Upload.aspx" />
+    <Content Include="Lists\AfterActionReports\AfterActionReportsInstance\Elements.xml" />
+    <Content Include="Lists\AfterActionReports\Elements.xml" />
+    <Content Include="Lists\AfterActionReports\Schema.xml" />
     <Content Include="Lists\AirSupportReq\AirSupportReqInstance\Elements.xml" />
     <Content Include="Lists\AirSupportReq\Elements.xml" />
     <Content Include="Lists\AirSupportReq\Schema.xml" />
@@ -400,9 +403,6 @@
     <Content Include="Lists\NodeStatus\Elements.xml" />
     <Content Include="Lists\NodeStatus\NodeStatusInstance\Elements.xml" />
     <Content Include="Lists\NodeStatus\Schema.xml" />
-    <Content Include="Lists\OIL\Elements.xml" />
-    <Content Include="Lists\OIL\OILInstance\Elements.xml" />
-    <Content Include="Lists\OIL\Schema.xml" />
     <Content Include="Lists\Phonebook\Elements.xml" />
     <Content Include="Lists\Phonebook\PhonebookInstance\Elements.xml" />
     <Content Include="Lists\Phonebook\Schema.xml" />

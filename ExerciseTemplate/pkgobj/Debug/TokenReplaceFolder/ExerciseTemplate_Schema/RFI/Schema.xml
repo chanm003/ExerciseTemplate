@@ -10,7 +10,6 @@
           <FieldRef ID="{305982bb-740c-43bb-a69e-f179b0d1bed9}" Name="Priority" />
           <FieldRef ID="{77724ef4-538f-4bb8-947c-88bfa27dfb47}" Name="LTIOV" />
           <FieldRef ID="{0831e704-45a1-459b-8aa4-4760b37e2cb7}" Name="POC" />
-          <FieldRef ID="{dfc55378-2bfc-4873-9338-b768cd0fb22d}" Name="POCEmail" />
           <FieldRef ID="{52a4efd5-c1ca-486a-9214-2d3a78f124e5}" Name="POCPhone" />
           <FieldRef ID="{29d688b7-3bb0-45f5-939e-7db4f8aad8d7}" Name="POCOrganization" />
           <FieldRef ID="{9a944f62-1447-4e4b-943d-df81c47b47c1}" Name="CollectionRequirement" />
@@ -48,10 +47,8 @@
         </CHOICES>
       </Field>
       <Field Type="DateTime" DisplayName="LTIOV" Description="Last Time Information Of Value (for mission-critical requests, only)." Required="FALSE" Format="DateTime" ID="{77724ef4-538f-4bb8-947c-88bfa27dfb47}" Name="LTIOV" />
-      <Field Type="Text" DisplayName="POC" Description="Request point of contact; typically the creator or the RFI Manager" Required="TRUE" MaxLength="255" ID="{0831e704-45a1-459b-8aa4-4760b37e2cb7}" Name="POC" />
-      <Field Type="Text" DisplayName="POC Email" Description="POC's email ID" Required="TRUE" MaxLength="255" ID="{dfc55378-2bfc-4873-9338-b768cd0fb22d}" Name="POCEmail">
-        <Validation Message="Invalid email format (expect @)">=NOT(ISERR(FIND("@",POCEmail)))</Validation>
-      </Field>
+      <Field Type="User" DisplayName="POC" Description="Request point of contact; typically the creator or the RFI Manager" Required="TRUE" ID="{0831e704-45a1-459b-8aa4-4760b37e2cb7}" Name="POC" />
+
       <Field Type="Text" DisplayName="POC Phone" Required="TRUE" MaxLength="255" ID="{52a4efd5-c1ca-486a-9214-2d3a78f124e5}" Name="POCPhone" />
       <Field Type="Text" DisplayName="POC Organization" Description="POC's organization" Required="TRUE" MaxLength="255" ID="{29d688b7-3bb0-45f5-939e-7db4f8aad8d7}" Name="POCOrganization" />
       <Field Type="Choice" DisplayName="Collection Requirement" Description="Select &quot;Yes&quot; if this is a Collection Requirement" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{9a944f62-1447-4e4b-943d-df81c47b47c1}" Name="CollectionRequirement">

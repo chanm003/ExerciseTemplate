@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ProjectItem Type="Microsoft.VisualStudio.SharePoint.ListDefinition" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
   <Files>
-    <ProjectItemFile Source="Elements.xml" Target="OIL\" Type="ElementManifest" />
-    <ProjectItemFile Source="Schema.xml" Target="OIL\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="AfterActionReports\" Type="ElementManifest" />
+    <ProjectItemFile Source="Schema.xml" Target="AfterActionReports\" Type="ElementFile" />
   </Files>
   <ExtensionData>
-    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x0100b6a6f0f58d3d46349501d9ba97a3fd8d" />
+    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x0100292bb6db72b343de84e7357f376aca3f" />
   </ExtensionData>
 </ProjectItem>

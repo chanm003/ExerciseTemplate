@@ -31,9 +31,6 @@
     <ElementManifest Location="NodeStatus\Elements.xml" />
     <ElementFile Location="NodeStatus\Schema.xml" />
     <ElementManifest Location="NodeStatusInstance\Elements.xml" />
-    <ElementManifest Location="OIL\Elements.xml" />
-    <ElementFile Location="OIL\Schema.xml" />
-    <ElementManifest Location="OILInstance\Elements.xml" />
     <ElementManifest Location="Phonebook\Elements.xml" />
     <ElementFile Location="Phonebook\Schema.xml" />
     <ElementManifest Location="PhonebookInstance\Elements.xml" />
@@ -142,5 +139,8 @@
     <ElementFile Location="SOTG2\Repair.aspx" />
     <ElementFile Location="SOTG2\Upload.aspx" />
     <ElementManifest Location="SOTG2Instance\Elements.xml" />
+    <ElementManifest Location="AfterActionReportsInstance\Elements.xml" />
+    <ElementManifest Location="AfterActionReports\Elements.xml" />
+    <ElementFile Location="AfterActionReports\Schema.xml" />
   </ElementManifests>
 </Feature>
